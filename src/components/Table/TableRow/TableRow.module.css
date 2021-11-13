@@ -1,0 +1,49 @@
+.tableRow {
+    position: relative;
+    padding: 10px 0;
+    color: #505050;
+}
+
+.tableRow::before {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    content: "";
+    width: calc(100% - 40px);
+    height: 1px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+.tableRow:hover {
+    position: relative;
+    box-shadow: 0 0 4px 4px #a5a5a5;
+}
+
+.tableRow:hover::before {
+    height: 0;
+}
+
+.tableRow:hover + .tableRow:before {
+    height: 0;
+}
+
+td:nth-child(3) {
+    color: orange;
+}
+
+.on, .off {
+    display: inline-block;
+    width: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.on {
+    background-color: #16be94;
+}
+
+.off {
+    background-color: #a5a5a5;
+}

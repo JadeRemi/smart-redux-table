@@ -1,0 +1,46 @@
+.tableHead span {
+    display: inline;
+    color: #16be94;
+    font-style: italic;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.tableHead span:hover {
+    font-weight: bold;
+}
+
+th {
+    font-weight: normal;
+}
+
+th:last-child {
+    padding-right: 15px;
+}
+
+.name {
+    position: relative;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.name::before,
+.name::after {
+    position: absolute;
+    content: "";
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.name::before {
+    top: 14px;
+    right: 5px;
+    border-top: 4px solid #ddd;
+}
+
+.name::after {
+    top: 8px;
+    right: 5px;
+    border-bottom: 4px solid #16be94;
+}

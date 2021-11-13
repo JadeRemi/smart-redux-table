@@ -1,0 +1,13 @@
+.appWrapper {
+  box-sizing: border-box;
+
+  width: calc(100%);
+  min-width: 320px;
+  max-width: 768px;
+  min-height: 100vh;
+
+  margin: auto;
+  padding: 20px;
+
+  background-color: #f8f9fa;
+}
